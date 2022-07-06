@@ -49,7 +49,7 @@ def getMember(request):
         uid = uid,
         room_name = room_name,
     )
-    name = member.name
+   # name = member.name
     return JsonResponse({'name':member.name}, safe=False)
 
 @csrf_exempt

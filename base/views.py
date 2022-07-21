@@ -29,7 +29,6 @@ def lobby(request):
 def room(request):
     return render(request, 'base/room.html')
 
-  
 @csrf_exempt
 def createMember(request):
     data = json.loads(request.body)
